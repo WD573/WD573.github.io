@@ -10,6 +10,7 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
+      touch-action: none;
     }
     video {
       width: 100%;
@@ -17,6 +18,15 @@
       object-fit: cover;
     }
   </style>
+
+<script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+
+
+  
 </head>
 
   
@@ -29,4 +39,14 @@
 
 
 </html>
+
+
+
+
+
+
+
+
+
+
 
